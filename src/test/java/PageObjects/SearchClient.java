@@ -18,7 +18,7 @@ public class SearchClient extends PageBase {
 
     public SearchClient(WebDriver driver) {
         super(driver);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(100000000));  
+        wait = new WebDriverWait(driver, Duration.ofSeconds(100000));  
         actions = new Actions(driver);
         js = (JavascriptExecutor)driver;
     }
@@ -41,7 +41,8 @@ public class SearchClient extends PageBase {
     
 
     public void openClientManager() {
-    
+    	
+    	wait.until(ExpectedConditions.visibilityOf(clientManager));
     	wait.until(ExpectedConditions.elementToBeClickable(clientManager)).click();
   
     }

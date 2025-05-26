@@ -10,9 +10,9 @@ import Testbase.testbase;
 
 public class verify_bulkedit extends testbase {
 
-    @Test
+    @Test(priority =1)
     public void login() throws InterruptedException {
-      /*  Loginpage lp = new Loginpage(driver);
+      /* Loginpage lp = new Loginpage(driver);
         lp.setusername("abhi@acmeminds.com");
         lp.setpassword("@#ABHI@#");
         lp.setloginbttn(); */
@@ -47,7 +47,7 @@ public class verify_bulkedit extends testbase {
         
         Thread.sleep(3000);
         String messgae = ft.getconfmsg();
-        Assert.assertEquals(messgae, "Updated succesfully.");
+       Assert.assertEquals(messgae, "Updated succesfully.");
     }
 }
 

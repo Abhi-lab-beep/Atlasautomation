@@ -8,12 +8,12 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Testcases.verify_bulkedit">
+      <class name="Testcases.verify_addaccount">
         <methods>
-          <include name="login"/>
+          <include name="addacc"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Testcases.verify_bulkedit -->
+      </class> <!-- Testcases.verify_addaccount -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

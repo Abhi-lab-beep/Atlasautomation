@@ -48,7 +48,7 @@ public class testbase {
         Loginpage lp = new Loginpage(driver);
         lp.setusername("abhi@acmeminds.com");
         lp.setpassword("@#ABHI@#");
-        lp.setloginbttn();
+        lp.setloginbttn(); 
         
     }
 
