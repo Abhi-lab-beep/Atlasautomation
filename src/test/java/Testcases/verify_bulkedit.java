@@ -12,10 +12,10 @@ public class verify_bulkedit extends testbase {
 
     @Test
     public void login() throws InterruptedException {
-        Loginpage lp = new Loginpage(driver);
+      /*  Loginpage lp = new Loginpage(driver);
         lp.setusername("abhi@acmeminds.com");
         lp.setpassword("@#ABHI@#");
-        lp.setloginbttn();
+        lp.setloginbttn(); */
         
 
         SearchClient sc = new SearchClient(driver);  

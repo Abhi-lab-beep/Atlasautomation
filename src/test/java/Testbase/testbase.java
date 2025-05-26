@@ -17,6 +17,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import PageObjects.Loginpage;
+
 public class testbase {
 
     public static WebDriver driver;
@@ -42,6 +44,12 @@ public class testbase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.get("https://atlas.qa.century-crm.com/#/login");
+        
+        Loginpage lp = new Loginpage(driver);
+        lp.setusername("abhi@acmeminds.com");
+        lp.setpassword("@#ABHI@#");
+        lp.setloginbttn();
+        
     }
 
     /*  @AfterClass

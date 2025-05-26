@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-25T17:15:36 IST" name="Suite" finished-at="2025-05-25T17:16:15 IST" duration-ms="38837">
+  <suite started-at="2025-05-26T12:32:10 IST" name="Suite" finished-at="2025-05-26T12:32:50 IST" duration-ms="39837">
     <groups>
     </groups>
-    <test started-at="2025-05-25T17:15:36 IST" name="Test" finished-at="2025-05-25T17:16:15 IST" duration-ms="38837">
+    <test started-at="2025-05-26T12:32:10 IST" name="Test" finished-at="2025-05-26T12:32:50 IST" duration-ms="39837">
       <class name="Testcases.verify_bulkedit">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Testcases.verify_bulkedit@55b0dcab]" started-at="2025-05-25T17:15:36 IST" name="setup" finished-at="2025-05-25T17:15:43 IST" duration-ms="6930" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Testcases.verify_bulkedit@55b0dcab]" started-at="2025-05-26T12:32:10 IST" name="setup" finished-at="2025-05-26T12:32:19 IST" duration-ms="8675" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:Testcases.verify_bulkedit@55b0dcab]" started-at="2025-05-25T17:15:43 IST" name="login" finished-at="2025-05-25T17:16:15 IST" duration-ms="31651" status="PASS">
+        <test-method signature="login()[pri:0, instance:Testcases.verify_bulkedit@55b0dcab]" started-at="2025-05-26T12:32:19 IST" name="login" finished-at="2025-05-26T12:32:49 IST" duration-ms="30921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
