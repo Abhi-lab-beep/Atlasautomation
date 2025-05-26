@@ -12,7 +12,6 @@
   <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Testcases.verify_bulkedit"/>
-      <class name="Testcases.verify_addaccount"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

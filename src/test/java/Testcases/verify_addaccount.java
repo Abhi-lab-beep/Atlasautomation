@@ -42,6 +42,7 @@ public class verify_addaccount extends testbase {
 			System.out.println("Test is failed");
 		}
 		
+		ct.textacc();
 				
 		
 	}

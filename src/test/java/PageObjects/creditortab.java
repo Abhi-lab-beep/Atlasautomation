@@ -1,6 +1,7 @@
 package PageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -56,6 +57,11 @@ public class creditortab extends PageBase{
 	
 	@FindBy(xpath="//div[@class='toast-message']")
 	WebElement confmessage;
+	
+	////div[@class='loan-table-list box-shadow']/table/tbody/tr/td[5]
+	
+	@FindBy(xpath="div[@class='loan-table-list box-shadow']/table/tbody/tr/td[5]")
+	List<WebElement> acclist;
 	
 	public void opencredtab()
 	{
@@ -127,6 +133,19 @@ public class creditortab extends PageBase{
 	public  String getconmsg() {
     	return confmessage.getText();
     }
+	
+	public void textacc() {
+		List <WebElement> list = acclist;
+		
+		for(int i =0; i<list.size(); i++) {
+			System.out.println(list.get(i).getText());
+			if(list.get(i).getText().equals("textasne545")) {
+				System.out.println(list.get(i));
+				break;
+			}
+		}
+		
+	}
 }
 
 
