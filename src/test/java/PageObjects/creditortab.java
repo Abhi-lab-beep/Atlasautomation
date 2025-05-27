@@ -20,7 +20,7 @@ public class creditortab extends PageBase{
 
 	public creditortab(WebDriver driver) {
 		super(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(1000000));  // Reasonable timeout
+		wait = new WebDriverWait(driver, Duration.ofSeconds(100000));  // Reasonable timeout
         actions = new Actions(driver);
         js=(JavascriptExecutor)driver;
 	}
@@ -80,7 +80,9 @@ public class creditortab extends PageBase{
 	}
 	
 	public void clickonaddaccbttn() {
-		wait.until(ExpectedConditions.visibilityOf(addaccbttn)).click();
+    	wait.until(ExpectedConditions.elementToBeClickable(addaccbttn)).click();
+  
+		//wait.until(ExpectedConditions.visibilityOf(addaccbttn)).click();
 	}
 	
 	
@@ -106,12 +108,15 @@ public class creditortab extends PageBase{
 	}
 	
 	public void  enterbalance(String bal) {
-		wait.until(ExpectedConditions.visibilityOf(addaccnum)).sendKeys(bal);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", addbalance);
+		wait.until(ExpectedConditions.visibilityOf(addbalance)).sendKeys(bal);
 	}
 	
 	public void selectsettings() {
+		wait.until(ExpectedConditions.visibilityOf(selectsettings));
 		Select settingdropdown = new Select(selectsettings);
-		settingdropdown.selectByValue("Active");
+		settingdropdown.selectByContainsVisibleText("Active");
+		//settingdropdown.selectByValue("Active");
 	}
 	
 	public void savebutton()

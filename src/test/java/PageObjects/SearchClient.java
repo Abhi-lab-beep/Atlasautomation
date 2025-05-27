@@ -42,7 +42,7 @@ public class SearchClient extends PageBase {
 
     public void openClientManager() {
     	
-    	wait.until(ExpectedConditions.visibilityOf(clientManager));
+    	//wait.until(ExpectedConditions.visibilityOf(clientManager));
     	wait.until(ExpectedConditions.elementToBeClickable(clientManager)).click();
   
     }

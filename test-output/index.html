@@ -129,15 +129,15 @@
                   <a name="addacc">
                   </a> <!-- addacc -->
                   <span class="method-name">addacc</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot; value=&quot;Add Account&quot; ng-click=&quot;vmSettlementList.view.toggleModify();&quot; apply-permissions=&quot;{page:&apos;client_creditors&apos;,control:&apos;add_account&apos;,isReadEqualtoNoView:true}&quot;&gt; is not clickable at point (300, 522). Other element would receive the click: &lt;div http-loader=&quot;&quot; class=&quot;page-splash&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (91, 320). Other element would receive the click: &lt;div http-loader=&quot;&quot; class=&quot;page-splash&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=136.0.7103.114)
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6cb090bb5f3ea4909cc7252b693160b1, clickElement {id=f.66FDA8BA7F279890235480FFEDAC10C0.d.CD1AE2B8622430E9107CDA7A5AB92D62.e.459}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62770}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62770/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6cb090bb5f3ea4909cc7252b693160b1)] -&gt; xpath: //input[@value=&apos;Add Account&apos;]]
-Session ID: 6cb090bb5f3ea4909cc7252b693160b1
+Command: [d5f5d652482d07ea0b826652ec2cdb94, clickElement {id=f.825ADF1253290580FEF0993793B767AC.d.F11B09328C120E01EB2AA0D52801ADB5.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65345}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65345/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5f5d652482d07ea0b826652ec2cdb94)] -&gt; xpath: //span[text()=&apos;Client Manager&apos;]]
+Session ID: d5f5d652482d07ea0b826652ec2cdb94
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -149,8 +149,8 @@ Session ID: 6cb090bb5f3ea4909cc7252b693160b1
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at PageObjects.creditortab.clickonaddaccbttn(creditortab.java:77)
-	at Testcases.verify_addaccount.addacc(verify_addaccount.java:25)
+	at PageObjects.SearchClient.openClientManager(SearchClient.java:46)
+	at Testcases.verify_addaccount.addacc(verify_addaccount.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -219,12 +219,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addacc')
 data.setCell(0, 2, 'Testcases.verify_addaccount')
-data.setCell(0, 3, 11585);
+data.setCell(0, 3, 4182);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -259,7 +259,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addacc</span>
-                <span class="method-start">9625 ms</span>
+                <span class="method-start">8713 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

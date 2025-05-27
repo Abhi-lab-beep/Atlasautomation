@@ -12,16 +12,17 @@ public class verify_addaccount extends testbase {
 	@Test(priority =1)
 	public void addacc() throws Exception {
 		
-	/*	SearchClient sc = new SearchClient(driver);  
+	SearchClient sc = new SearchClient(driver);  
         Thread.sleep(3000);
         sc.openClientManager();
         sc.openSearchClient();
         sc.enterClientId("36111696");
         sc.clickSearchButton();
-        sc.clickClientLink();*/
+        sc.clickClientLink();
 		
 		creditortab ct = new creditortab(driver);
 		ct.opencredtab();
+		Thread.sleep(3000);
 		ct.clickonaddaccbttn();
 		ct.clickonaddlink();
 		ct.enteratlasid("7");
@@ -42,7 +43,7 @@ public class verify_addaccount extends testbase {
 			System.out.println("Test is failed");
 		}
 		
-		ct.textacc();
+		//ct.textacc();
 				
 		
 	}
