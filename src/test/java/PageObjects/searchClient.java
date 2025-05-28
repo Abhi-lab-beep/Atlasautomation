@@ -70,8 +70,13 @@ public class searchClient extends pageBase {
 
     public void clickSearchButton() {
     	//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", buttonSearch);
-    	wait.until(ExpectedConditions.visibilityOf(buttonSearch));
-    	wait.until(ExpectedConditions.elementToBeClickable(buttonSearch)).click();
+    	try {
+    		wait.until(ExpectedConditions.elementToBeClickable(buttonSearch)).click();
+        } catch (ElementClickInterceptedException e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", buttonSearch);
+        }
+    	//wait.until(ExpectedConditions.visibilityOf(buttonSearch));
+    	//wait.until(ExpectedConditions.elementToBeClickable(buttonSearch)).click();
         
     }
 

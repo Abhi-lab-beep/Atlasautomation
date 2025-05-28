@@ -12,6 +12,7 @@
   <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Testcases.verifyBulkEdit"/>
+      <class name="Testcases.verifyAddAccount"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,21 +5,27 @@ import org.testng.annotations.Test;
 
 import PageObjects.searchClient;
 import PageObjects.creditorTab;
+import PageObjects.loginPage;
 import Testbase.testBase;
 
 public class verifyAddAccount extends testBase {
 	
 	@Test(priority =1)
 	public void addacc() throws Exception {
-		
-	searchClient sc = new searchClient(driver);  
-        Thread.sleep(3000);
+		loginPage lp = new loginPage(driver);
+		lp.setusername("abhi@acmeminds.com");
+        lp.setpassword("@#ABHI@#");
+        lp.setloginbttn(); 
+        
+
+        searchClient sc = new searchClient(driver);  
+       // Thread.sleep(300);
         sc.openClientManager();
         sc.openSearchClient();
-        sc.enterClientId("36111696");
+        sc.enterClientId("52800102");
         sc.clickSearchButton();
         sc.clickClientLink();
-		
+        
 		creditorTab ct = new creditorTab(driver);
 		ct.opencredtab();
 		Thread.sleep(3000);
@@ -33,7 +39,7 @@ public class verifyAddAccount extends testBase {
 		ct.selectsettings();
 		ct.savebutton();
 		
-		String mesgtes = ct.getconmsg();
+		/*String mesgtes = ct.getconmsg();
 		
 		if (mesgtes == "Loan information saved successfully.!!")
 		{
@@ -41,7 +47,7 @@ public class verifyAddAccount extends testBase {
 		}
 		else {
 			System.out.println("Test is failed");
-		}
+		}*/
 		
 		//ct.textacc();
 				

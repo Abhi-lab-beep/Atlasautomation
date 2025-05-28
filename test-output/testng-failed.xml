@@ -8,6 +8,12 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="Testcases.verifyAddAccount">
+        <methods>
+          <include name="addacc"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Testcases.verifyAddAccount -->
       <class name="Testcases.verifyBulkEdit">
         <methods>
           <include name="fullschedulechange"/>
